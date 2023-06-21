@@ -33,6 +33,31 @@
             font-size: 30px;
             line-height: 40px;
         }
+    }
+    .carousel {
+        padding: 50px 0;
+        &__inner {
+            max-width: 100%;   
+            .slick-dots {
+                font-size: 0;
+                text-align: center;
+                display: flex; // поставить кнопки в ряд
+                justify-content: center; // выровнять по центру
+                list-style: none; // убираем черные маркеры
+            }
+            .slick-dots button {
+                background: rgb(56, 53, 53); // цвет фона
+                border: none; // без рамки
+                border-radius: 100%; // радиус закругления
+                height: 25px; // высота точки
+                width: 25px; // ширина точки
+                margin: 25px; // отступы между точками
+                outline: none; // убираем обводку
+            }
+            .slick-dots li[class="slick-active"] button {
+                background: $main-color;
+            }
+        }   
     }  
 }
 @media (max-width: 768px) {
