@@ -1,0 +1,65 @@
+.footer {
+    height: 630px;
+    position: relative;
+    &__info {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 270px;
+        width: 460px;
+        background-color: $main-color;
+        padding: 50px 68px 60px 68px;
+    }
+    &__adr {
+        margin-bottom: 36px;
+        color: #FFF;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+    &__phone {
+        display: block;
+        margin-bottom: 38px;
+        color: #FFF;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        text-decoration: none;
+        line-height: 20px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__social-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #ffffff;
+        border-radius: 100%;
+        margin: 0 15px;
+        transition: 0.5s all;
+        &:hover {
+            border: 2px solid #f0eeee;
+            background-color: #f0eeee;
+            box-shadow: 0px 0px 20px black;
+            svg {
+                fill: black;
+            }
+        }
+        svg {
+            fill: #ffffff;
+            height: 27px;
+            transition: 1s all;
+        }
+    }
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}

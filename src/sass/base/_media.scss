@@ -79,6 +79,23 @@
             line-height: 20px;
         }
     }
+    .footer {
+        &__info {
+            width: 100%;
+            height: 150px;
+            padding: 20px 0 20px 0;
+        }
+        &__adr {
+            margin-bottom: 15px;
+            font-size: 18px;
+            line-height: 18px;
+        }
+        &__phone {
+            margin-bottom: 15px;
+            font-size: 18px;
+            line-height: 18px;
+        }
+    }
 
 }
 @media (max-width: 768px) {
@@ -145,9 +162,9 @@
     .catalog {
         padding-bottom: 60px;
         &__tab {
-            width: 10px;
+            width: 140px;
             height: 40px;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 40px;
         }
         &-item {
@@ -194,6 +211,12 @@
                 width: 70%;
             }
         }    
+    }
+    .modal {
+        &__close {
+            right: 10px;
+            top: 10px;
+        }
     }
 }
 
@@ -267,5 +290,16 @@
             line-height: 20px;
             margin-top: 25px;
         }
+    }
+    .catalog {
+        &__tabs {
+            flex-wrap: wrap;
+        }
+        &__tab {
+            margin-bottom: 5px;
+        }
+    }
+    .modal {
+        width: 100%;
     }
 }
